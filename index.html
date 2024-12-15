@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Piano</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favico.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <h1>Virtual Piano</h1>
+        <div class="piano">
+            <div class="whitekey" data-key="65" data-sound="b4">A<span>b4</span></div>
+            <div class="whitekey" data-key="83" data-sound="c5">S<span>c5</span></div>
+            <div class="whitekey" data-key="68" data-sound="d5">D<span>d5</span></div>
+            <div class="whitekey" data-key="70" data-sound="e5">F<span>e5</span></div>
+            <div class="whitekey" data-key="71" data-sound="f5">G<span>f5</span></div>
+            <div class="whitekey" data-key="72" data-sound="g5">H<span>g5</span></div>
+            <div class="whitekey" data-key="74" data-sound="a5">J<span>a5</span></div>
+            <div class="whitekey" data-key="75" data-sound="b5">K<span>b5</span></div>
+            <div class="whitekey" data-key="76" data-sound="c6">L<span>c6</span></div>
+            <div class="whitekey" data-key="186" data-sound="d6">;<span>d6</span></div>
+            <div class="blackkey" data-key="81" data-sound="a4-sharp" style="left: 0%;">Q<span>a#</span></div>
+            <div class="blackkey" data-key="69" data-sound="c5-sharp" style="left: 20%;">E<span>c#</span></div>
+            <div class="blackkey" data-key="82" data-sound="d5-sharp" style="left: 30%;">R<span>d#</span></div>
+            <div class="blackkey" data-key="89" data-sound="f5-sharp" style="left: 50%;">Y<span>f#</span></div>
+            <div class="blackkey" data-key="85" data-sound="g5-sharp" style="left: 60%;">U<span>g#</span></div>
+            <div class="blackkey" data-key="73" data-sound="a5-sharp" style="left: 70%;">I<span>a#</span></div>
+            <div class="blackkey" data-key="79" data-sound="c6-sharp" style="left: 90%;">O<span>c#</span></div>
+            <div class="blackkey" data-key="80" data-sound="d6-sharp" style="left: 100%;">P<span>d#</span></div>
+        </div>
+        <div class="controls">
+            <button id="start-recording">Start Recording</button>
+            <button id="play-recording">Play Recording</button>
+        </div>
+    </div>
+    <script src="piano.js"></script>
+</body>
+</html>

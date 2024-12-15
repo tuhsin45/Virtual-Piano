@@ -1,0 +1,132 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #f9a8d4, #6d28d9);
+    font-family: Arial, sans-serif;
+    overflow: hidden; 
+}
+
+.container {
+    width: 100%;
+    max-width: 1000px;
+    text-align: center;
+}
+
+.piano {
+    padding-top: 50px;
+    display: flex;
+    position: relative;
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.whitekey {
+    padding-bottom: 8px;
+    width: 10%;
+    height: 250px;
+    background: #fff;
+    border: 1px solid #000;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.blackkey {
+    padding-bottom: 8px;
+    width: 6%;
+    height: 140px;
+    background: #000;
+    position: absolute;
+    z-index: 2;
+    left: calc(6% - 2.5%);
+    transform: translateX(-50%);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    font-size: 10px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+span {
+    font-size: 10px;
+    font-family: Helvetica, sans-serif;
+    padding-bottom: 15px;
+}
+.whitekey:active {
+    background-color: #ddd;
+}
+
+.blackkey:active {
+    background-color: #444;
+}
+
+.controls {
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+@media (max-width: 768px) {
+    .whitekey {
+        height: 150px;
+        font-size: 12px;
+    }
+    .blackkey {
+        height: 100px;
+        font-size: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .whitekey {
+        height: 120px;
+        font-size: 10px;
+    }
+    .blackkey {
+        height: 80px;
+        font-size: 6px;
+    }
+    #start-recording {
+        margin: 4px;
+    }
+    #play-recording {
+        margin: 4px;
+    }
+}
+.whitekey.active {
+    background-color: #979494;
+}
+
+.blackkey.active {
+    background-color: #444141;
+}
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #020422;
+}
+
